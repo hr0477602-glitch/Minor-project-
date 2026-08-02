@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Timetable Management</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>SIHMS</h2>
+
+<a href="admin.html">🏠 Dashboard</a>
+<a href="students.html">👨‍🎓 Students</a>
+<a href="faculty.html">👨‍🏫 Faculty</a>
+<a href="department.html">🏫 Department</a>
+<a href="subject.html">📚 Subject</a>
+<a href="attendance.html">📝 Attendance</a>
+<a href="timetable.html">📅 Timetable</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Timetable Management</h1>
+
+<input type="text" id="day" placeholder="Day">
+
+<input type="text" id="subject" placeholder="Subject">
+
+<input type="text" id="faculty" placeholder="Faculty Name">
+
+<input type="time" id="time">
+
+<button onclick="addTimetable()">Add Timetable</button>
+
+<br><br>
+
+<input type="text" id="searchTime" placeholder="Search Subject" onkeyup="searchTimetable()">
+
+<br><br>
+
+<table id="timeTable">
+
+<tr>
+<th>Day</th>
+<th>Subject</th>
+<th>Faculty</th>
+<th>Time</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

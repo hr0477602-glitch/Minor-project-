@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Management</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>SIHMS</h2>
+
+<a href="admin.html">🏠 Dashboard</a>
+<a href="students.html">👨‍🎓 Students</a>
+<a href="faculty.html">👨‍🏫 Faculty</a>
+<a href="department.html">🏫 Department</a>
+<a href="subject.html">📚 Subject</a>
+<a href="attendance.html">📝 Attendance</a>
+<a href="timetable.html">📅 Timetable</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Student Management</h1>
+
+<input type="text" id="name" placeholder="Student Name">
+
+<input type="text" id="roll" placeholder="Roll Number">
+
+<input type="text" id="department" placeholder="Department">
+
+<input type="text" id="semester" placeholder="Semester">
+
+<button onclick="addStudent()">Add Student</button>
+
+<br><br>
+
+<input type="text" id="search" placeholder="Search Student" onkeyup="searchStudent()">
+
+<br><br>
+
+<table id="studentTable">
+
+<tr>
+<th>Name</th>
+<th>Roll</th>
+<th>Department</th>
+<th>Semester</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

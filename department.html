@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Department Management</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>SIHMS</h2>
+
+<a href="admin.html">🏠 Dashboard</a>
+<a href="students.html">👨‍🎓 Students</a>
+<a href="faculty.html">👨‍🏫 Faculty</a>
+<a href="department.html">🏫 Department</a>
+<a href="subject.html">📚 Subject</a>
+<a href="attendance.html">📝 Attendance</a>
+<a href="timetable.html">📅 Timetable</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Department Management</h1>
+
+<input type="text" id="deptCode" placeholder="Department Code">
+
+<input type="text" id="deptName" placeholder="Department Name">
+
+<button onclick="addDepartment()">Add Department</button>
+
+<br><br>
+
+<input type="text" id="searchDept" placeholder="Search Department" onkeyup="searchDepartment()">
+
+<br><br>
+
+<table id="departmentTable">
+
+<tr>
+<th>Department Code</th>
+<th>Department Name</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
